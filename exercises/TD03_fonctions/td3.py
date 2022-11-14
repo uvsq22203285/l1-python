@@ -1,7 +1,7 @@
 def tempsEnSeconde(temps):
     t = 24 * 3600 * temps[0] + temps[1] * 3600 + temps[2] * 60 + temps[3]
     return t
-temps = (3,23,1,34)
+temps=(3 , 23 , 1 , 34)
 print(type(temps))
 print(tempsEnSeconde(temps))   
 
@@ -36,27 +36,27 @@ def afficheTemps(temps):
 afficheTemps((1,0,14,23))    
 
 
-a=int(input())
-
-
 def demandeTemps(a):
-   
+    a[0]=int(input("Un nombre de jour"))
     if a[0] == 1:
         print(a[0], "jour",end=" ")
     else:
         print(a[0], "jours",end=" ")
+    a[1]=int(input("Un nombre d'heure"))
     if a[1] > 23:
         print("Erreur",end=" ")
     elif a[1] == 1 :
         print(a[1], "heure",end=" ")
     else:
         print(a[1],"heures",end=" " )
+    a[2]=int(input("Un nombre de minutes"))
     if a[2] > 59:
         print("Erreur",end=" ")
     elif a[2] == 1 :
         print(a[2], "minute",end=" ")
     else:
         print(a[2],"minutes",end=" " )
+    a[3]=int(input("Un nombre de secondes"))
     if a[3] > 59:
         print("Erreur",end=" ")
     elif a[3] == 1 :
@@ -64,5 +64,15 @@ def demandeTemps(a):
     else:
         print(a[3],"secondes",end=" " )
         
+
+
+
+def sommeTemps(temps1,temps2):
+    
+
+sommeTemps((2,3,4,25),(5,22,57,1))
+    
+
+print(sommeTemps)
 
 
